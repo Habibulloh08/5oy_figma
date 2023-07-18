@@ -1,0 +1,36 @@
+.slayd {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color: #f7ede8;
+  .container {
+    @include container();
+    .slayd-block {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 90px;
+    }
+    .slayd-platform {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: flex;
+      p {
+        width: 35%;
+        color: var(--black, #000);
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 22.65px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: -0.453px;
+      }
+      .slayd-paltform_img {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}

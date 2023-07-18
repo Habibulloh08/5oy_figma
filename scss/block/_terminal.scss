@@ -1,0 +1,63 @@
+.terminal {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  .container {
+    @include container();
+    .terminal-title {
+      position: relative;
+      margin-top: 80px;
+      width: $width;
+      text-align: center;
+      padding-bottom: 30px;
+      h1 {
+        @include h1();
+        margin-bottom: 20px;
+      }
+      p {
+        @include p();
+        font-size: 22.65px;
+      }
+      &_svg {
+        position: absolute;
+        right: 150px;
+        top: -180px;
+      }
+    }
+    .terminal-list {
+      width: $width;
+
+      display: grid;
+      grid-template-columns: auto auto auto;
+      row-gap: 20px;
+      list-style: none;
+      li {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        width: 373px;
+        height: 202px;
+        text-align: center;
+        p {
+          width: 75%;
+        }
+      }
+    }
+    .terminal-button {
+      margin-top: 40px;
+      text-align: center;
+      width: $width;
+      &_btn {
+        @include btn();
+        width: 190px;
+      }
+      &_btn:hover {
+        border: 2px solid var(--black, #000);
+        background: var(--black, #000);
+        box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+        color: white;
+      }
+    }
+  }
+}

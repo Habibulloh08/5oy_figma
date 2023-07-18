@@ -1,0 +1,57 @@
+.app {
+  margin: 0 auto;
+  padding-top: 30px;
+  background: #edf3f7;
+  .container {
+    @include container();
+    position: relative;
+    .app-img2 {
+      position: absolute;
+      right: 10px;
+      z-index: 1;
+      img {
+        width: 320px;
+        height: 807.669px;
+      }
+    }
+    .app-img1 {
+      position: absolute;
+      z-index: 1;
+      img {
+        width: 373px;
+        height: 507.669px;
+      }
+    }
+    .app-title {
+      margin-top: 80px;
+      width: $width;
+      text-align: center;
+      padding-bottom: 30px;
+      h1 {
+        @include h1();
+        margin-bottom: 20px;
+      }
+      p {
+        @include p();
+        font-size: 22.65px;
+      }
+      &_btn {
+        @include btn();
+        margin-top: 100px;
+        width: 20%;
+      }
+      &_btn:hover {
+        border: 2px solid var(--black, #000);
+        background: var(--black, #000);
+        box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+        color: white;
+      }
+      &_img {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

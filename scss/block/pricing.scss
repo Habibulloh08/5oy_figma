@@ -1,0 +1,106 @@
+.pricing {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background: #fff;
+  .container {
+    @include container();
+    .pricing-title {
+      margin-top: 80px;
+      width: $width;
+      text-align: center;
+      padding-bottom: 30px;
+      h1 {
+        @include h1();
+        margin-bottom: 20px;
+      }
+      p {
+        @include p();
+        font-size: 22.65px;
+      }
+    }
+    .pricing-list1 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      list-style: none;
+
+      li {
+        width: 373px;
+        height: 357px;
+        border-radius: 8px;
+        border: 1.5px solid var(--black, #000);
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 20px;
+        h2 {
+          @include h2();
+          text-align: justify;
+        }
+        p {
+          @include p();
+          text-align: justify;
+          width: 90%;
+        }
+        .pricing-list_rate {
+          display: flex;
+          align-items: center;
+          //   justify-content: space-around;
+          padding-left: -20px;
+          &__btn {
+            @include btn();
+            width: 45%;
+            border: 2px solid var(--black, #000);
+            background: var(--black, #000);
+            box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+            color: #fff;
+          }
+
+          &__subtitle {
+            width: 55%;
+            text-align: center;
+            .span {
+              color: var(--vermillion, #cd4631);
+              /* H3/Style 2 */
+              font-family: Montserrat Alternates;
+              font-size: 22.65px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 140%; /* 31.71px */
+              letter-spacing: -0.453px;
+            }
+            @include p();
+          }
+        }
+      }
+      li:hover {
+        background-color: #f7ede8;
+      }
+    }
+    .pricing-list2 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      list-style: none;
+      margin-top: 20px;
+      li {
+        width: 373px;
+        height: 357px;
+        border-radius: 8px;
+        border: 1.5px solid var(--black, #000);
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        p {
+          @include p();
+          text-align: justify;
+        }
+      }
+      li:hover {
+        background-color: #f7ede8;
+      }
+    }
+  }
+}

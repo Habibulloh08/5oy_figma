@@ -1,0 +1,54 @@
+.listeners {
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 0px;
+  .container {
+    @include container();
+    .listeners-title {
+      width: $width;
+      text-align: center;
+      padding-bottom: 30px;
+      h1 {
+        @include h1();
+        margin-bottom: 20px;
+      }
+      p {
+        @include p();
+        font-size: 22.65px;
+      }
+    }
+    .listeners-img {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    .listeners-subtitle {
+      width: $width;
+      text-align: center;
+      padding-bottom: 30px;
+      position: relative;
+      h2 {
+        @include h2();
+      }
+      &_svg {
+        top: -70px;
+        left: 390px;
+        position: absolute;
+      }
+    }
+    .listeners-text {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 50px;
+
+      p {
+        width: 45%;
+        @include p();
+        text-align: justify;
+      }
+      &_span {
+        color: black;
+        font-weight: bolder;
+      }
+    }
+  }
+}

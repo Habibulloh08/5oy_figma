@@ -1,0 +1,61 @@
+@import "../global.scss";
+.header {
+  margin: 0 auto;
+  background-color: #f7ede8;
+  .container {
+    @include container();
+    .header-nav {
+      width: $width;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &_logo {
+        width: 15%;
+        cursor: pointer;
+      }
+      &_list {
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        li {
+          @include menyu();
+          cursor: pointer;
+        }
+      }
+      &_button {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        &--btn1 {
+          width: 188px;
+          height: 41px;
+          border-radius: 8px;
+          border: 2px solid var(--black, #000);
+          cursor: pointer;
+          font-family: "Montserrat Alternates", sans-serif;
+          background: transparent;
+        }
+        &--btn1:hover {
+          background-color: #000;
+          color: #f5f8fc;
+        }
+        &--btn2 {
+          width: 188px;
+          height: 41px;
+          border-radius: 8px;
+          border: 2px solid var(--black, #000);
+          cursor: pointer;
+          font-family: "Montserrat Alternates", sans-serif;
+          background: transparent;
+          cursor: pointer;
+        }
+        &--btn2:hover {
+          background-color: #000;
+          color: #f5f8fc;
+        }
+      }
+    }
+  }
+}

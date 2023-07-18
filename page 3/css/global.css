@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.span {
+  color: var(--vermillion, #cd4631);
+}
+
+button {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=global.css.map */

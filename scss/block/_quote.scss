@@ -1,0 +1,54 @@
+.quote {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  .container {
+    @include container();
+    background-color: #f7ede8;
+    border-radius: 8px;
+    position: relative;
+    .quote-img1 {
+      position: absolute;
+      right: -50px;
+      top: -50px;
+    }
+    .quote-img2 {
+      position: absolute;
+      bottom: 50px;
+      left: -60px;
+    }
+    .quote-block {
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+      justify-content: center;
+      align-items: center;
+      &_sign {
+        color: var(--vermillion, #cd4631);
+        text-align: center;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 95.95px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 95.95px */
+        letter-spacing: -1.919px;
+      }
+      &_title {
+        @include h2();
+      }
+      &_subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        P {
+          @include p();
+        }
+        h3 {
+          font-family: "Montserrat Alternates", sans-serif;
+        }
+      }
+    }
+  }
+}

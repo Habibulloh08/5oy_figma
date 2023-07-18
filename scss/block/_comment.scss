@@ -1,0 +1,77 @@
+.comment {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background: var(--alice-blue, #edf3f7);
+  .container {
+    @include container();
+    .comment-title {
+      position: relative;
+      margin-top: 80px;
+      width: $width;
+      text-align: center;
+      padding-bottom: 30px;
+      h1 {
+        @include h1();
+        margin-bottom: 20px
+      }
+      p {
+        @include p();
+        font-size: 22.65px;
+      }
+      &_svg {
+        position: absolute;
+        top: -50px;
+        left: 200px;
+      }
+    }
+    .comment-block {
+      width: $width;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+      .comment-block_card1 {
+        width: 570px;
+        height: 360px;
+        border-radius: 8px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 30px;
+        padding-left: 30px;
+        h4 {
+          color: var(--vermillion, #cd4631);
+          text-align: center;
+          font-family: Montserrat Alternates;
+          font-size: 95.95px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 60%; /* 115.14px */
+          letter-spacing: -1.919px;
+        }
+        p {
+          width: 90%;
+          @include p();
+          font-weight: 500;
+          font-size: 22.65px;
+          line-height: 160%;
+          text-align: justify;
+        }
+        &__content {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          h3 {
+            font-family: "Montserrat Alternates", sans-serif;
+          }
+        }
+      }
+    }
+    .comment-arrow {
+      margin-top: 50px;
+      cursor: pointer;
+    }
+  }
+}

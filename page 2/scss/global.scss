@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // transition: all 1s;
+}
+$width: 100%;
+$border: 1px solid;
+
+@mixin container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  // border: 1px solid;
+}
+@mixin menyu {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+@mixin btn {
+  width: 185px;
+  height: 65px;
+  display: inline-flex;
+  padding: 20px 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: transparent;
+  color: #000;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+@mixin h1 {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 59.3px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 71.16px */
+  letter-spacing: -1.186px;
+}
+@mixin h2 {
+  color: var(--black, #000);
+  //   text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 36.65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 51.31px */
+  letter-spacing: -0.733px;
+}
+
+@mixin p {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+}
+@mixin span {
+  color: var(--black, #000);
+}
+button {
+  cursor: pointer;
+}
